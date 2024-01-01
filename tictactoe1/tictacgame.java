@@ -186,6 +186,17 @@ public class tictacgame extends JFrame implements ActionListener{
         }
     }
 
+        public class Main {
+    public static void main(String[] args) {
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                tictacgame game = new tictacgame();
+                game.setVisible(true);
+            }
+        });
+    }
+}
+
     private void resetTheButtons2() {
         //resets all buttons and askes for name again.
         playerMark = 'X';
